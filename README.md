@@ -1,2 +1,2 @@
-# Block-I
-This is going to be the exercise to practice pull requests with the team.
+# CICD_training
+This repository will be used for training purposes.
