@@ -12,7 +12,7 @@ public class Main {
             System.out.println("3. Complete Task");
             System.out.println("4. Remove Task");
             System.out.println("5. Exit");
-            System.out.print("Choose an option: ");
+            System.out.print("Choose an option or call Mr.Erik: ");
 
             String input = scanner.nextLine();
             switch (input) {
