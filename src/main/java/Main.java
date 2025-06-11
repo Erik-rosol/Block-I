@@ -11,8 +11,10 @@ public class Main {
             System.out.println("2. List Tasks");
             System.out.println("3. Complete Task");
             System.out.println("4. Remove Task");
-            System.out.println("5. Exit");
-            System.out.print("Choose an option or call Mr.Erik: ");
+            System.out.println("5. Uncompleted Task");
+            System.out.println("6. Edit Task");
+            System.out.println("7. Exit");
+            System.out.print("Choose an option: ");
 
             String input = scanner.nextLine();
             switch (input) {
@@ -35,6 +37,12 @@ public class Main {
                     taskManager.removeTask(removeId);
                     break;
                 case "5":
+                    System.out.println("Not implemented yet");
+                    break;
+                case "6":
+                    System.out.println("Not implemented yet");
+                    break;
+                case "7":
                     System.out.println("Goodbye!");
                     return;
                 default:

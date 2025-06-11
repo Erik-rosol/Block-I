@@ -3,6 +3,8 @@ public class Task {
     private String description;
     private boolean completed;
 
+
+
     public Task(int id, String description) {
         this.id = id;
         this.description = description;
@@ -15,6 +17,10 @@ public class Task {
 
     public void setCompleted(boolean completed) {
         this.completed = completed;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
     }
 
     @Override

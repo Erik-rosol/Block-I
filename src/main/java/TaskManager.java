@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.Iterator;
 import java.util.List;
 
@@ -7,10 +8,6 @@ public class TaskManager {
     private int nextId = 1;
 
     public void addTask(String description) {
-        if(description == null || description.trim().isEmpty()){
-            System.out.println("Error: Description cannot be empty.");
-            return;
-        }
         Task task = new Task(nextId++, description);
         tasks.add(task);
         System.out.println("Added: " + task);
@@ -20,9 +17,7 @@ public class TaskManager {
         if (tasks.isEmpty()) {
             System.out.println("No tasks found.");
         } else {
-            for (Task task : tasks) {
-                System.out.println(task);
-            }
+            tasks.stream().sorted(Comparator.comparing(Task::isCompleted)).forEach(System.out::println);
         }
     }
 
@@ -49,4 +44,14 @@ public class TaskManager {
         }
         System.out.println("Task not found.");
     }
+    public void editTask(int id, String newDescription){
+    }
+
+    public void undoCompleteTask(int id) {
+
+    }
+    public List<Task> getTasks(){
+        return tasks;
+    }
+
 }
