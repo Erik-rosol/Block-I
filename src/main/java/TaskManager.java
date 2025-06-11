@@ -17,7 +17,9 @@ public class TaskManager {
         if (tasks.isEmpty()) {
             System.out.println("No tasks found.");
         } else {
-            tasks.stream().sorted(Comparator.comparing(Task::isCompleted)).forEach(System.out::println);
+            for (Task task : tasks) {
+                System.out.println(task);
+            }
         }
     }
 
