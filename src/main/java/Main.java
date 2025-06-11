@@ -13,7 +13,9 @@ public class Main {
             System.out.println("4. Remove Task");
             System.out.println("5. Uncompleted Task");
             System.out.println("6. Edit Task");
-            System.out.println("7. Exit");
+            System.out.println("7. Count Task");
+            System.out.println("8. Remove all Tasks");
+            System.out.println("9. Exit");
             System.out.print("Choose an option: ");
 
             String input = scanner.nextLine();
@@ -43,6 +45,12 @@ public class Main {
                     System.out.println("Not implemented yet");
                     break;
                 case "7":
+                    System.out.println("Not implemented yet");
+                    break;
+                case "8":
+                    System.out.println("Not implemented yet");
+                    break;
+                case "9":
                     System.out.println("Goodbye!");
                     return;
                 default:

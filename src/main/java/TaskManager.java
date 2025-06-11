@@ -50,8 +50,10 @@ public class TaskManager {
     }
 
     public void undoCompleteTask(int id) {
-
     }
+    public void showTaskSummary() {
+    }
+
     public List<Task> getTasks(){
         return tasks;
     }
