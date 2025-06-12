@@ -12,7 +12,6 @@ public class TaskManager {
         tasks.add(task);
         System.out.println("Added: " + task);
     }
-
     public void listTasks() {
         if (tasks.isEmpty()) {
             System.out.println("No tasks found.");
@@ -22,7 +21,6 @@ public class TaskManager {
             }
         }
     }
-
     public void completeTask(int id) {
         for (Task task : tasks) {
             if (task.getId() == id) {
@@ -33,7 +31,6 @@ public class TaskManager {
         }
         System.out.println("Task not found.");
     }
-
     public void removeTask(int id) {
         Iterator<Task> iterator = tasks.iterator();
         while (iterator.hasNext()) {
@@ -48,12 +45,10 @@ public class TaskManager {
     }
     public void editTask(int id, String newDescription){
     }
-
     public void undoCompleteTask(int id) {
     }
     public void showTaskSummary() {
     }
-
     public List<Task> getTasks(){
         return tasks;
     }

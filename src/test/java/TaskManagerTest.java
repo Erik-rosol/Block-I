@@ -1,6 +1,6 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class TaskManagerTest {
 
@@ -12,6 +12,18 @@ public class TaskManagerTest {
     }
     @Test
     public void testRemoveTask(){
+    }
+    @Test
+    public void testRemoveNonexistentTask() {
+    }
+    @Test
+    public void testCompleteNonexistentTask() {
+    }
+
+    @Test
+    public void testListTasksWhenEmpty() {
+        TaskManager manager = new TaskManager();
+        assertDoesNotThrow(manager::listTasks);
     }
 
 }
