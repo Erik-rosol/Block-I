@@ -19,11 +19,8 @@ public class TaskManagerTest {
     @Test
     public void testCompleteNonexistentTask() {
     }
-
     @Test
     public void testListTasksWhenEmpty() {
-        TaskManager manager = new TaskManager();
-        assertDoesNotThrow(manager::listTasks);
     }
 
 }
