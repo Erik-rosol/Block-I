@@ -17,10 +17,9 @@ jobs:
             - [ ] Clean code standards applied
             - [ ] Unitary tests completed
             - [ ] Usability test done
-            - Tuleap management
-              - [ ] Task Initial Effort updated
-              - [ ] Task Remaining Effort updated
-              - [ ] Status updated
+            - [ ] Task Initial Effort updated (if needed)
+            - [ ] Task Remaining Effort updated
+            - [ ] Status updated
             - [ ] Teams notification
             `;
 
