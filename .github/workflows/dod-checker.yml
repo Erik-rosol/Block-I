@@ -6,8 +6,8 @@ on:
 
 jobs:
     add-dod-comment:
-    runs-on: ubuntu-latest
-    steps:
+      runs-on: ubuntu-latest
+      steps:
       - name: Comment DoD checklist on PR
         uses: actions/github-script@v7
         with:
